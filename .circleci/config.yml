@@ -1,0 +1,39 @@
+version: 2.1
+
+workflows:
+  build-and-deploy-to-heroku:
+    jobs:
+      - build-and-test
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/base:2021.04
+    steps:
+      - checkout
+      - run: 
+          command: |
+            wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+            sudo dpkg -i packages-microsoft-prod.deb
+            rm packages-microsoft-prod.deb
+            sudo apt-get update; \
+            sudo apt-get install -y apt-transport-https && \
+            sudo apt-get update && \
+            sudo apt-get install -y dotnet-sdk-5.0
+      - setup_remote_docker
+      - run:
+          name: "Build albumcollection image and sql server image"
+          command: |
+            docker-compose build --pull
+      - run:
+          name: "Running tests"
+          command: |
+            mkdir test-results
+            dotnet test ./albumcollection --logger:"junit;LogFilePath=test-results/albumcollection/xunit.xml"
+      - store_test_results:
+          path: albumcollection/albumCollection.Tests/test-results
+      - store_artifacts:
+          path: albumcollection/albumCollection.Tests/test-results
+    
+
+      
+            

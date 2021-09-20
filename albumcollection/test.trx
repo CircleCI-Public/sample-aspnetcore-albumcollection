@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="bf8b9dac-c4b0-4263-9cc3-5372b7575cd0" name="@Michaels-MacBook-Pro 2021-09-15 20:21:34" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-09-15T20:21:34.8883070-07:00" queuing="2021-09-15T20:21:34.8883070-07:00" start="2021-09-15T20:21:32.1716610-07:00" finish="2021-09-15T20:21:34.8976260-07:00" />
+  <TestSettings name="default" id="3985162a-77d3-42f8-a1c6-8ef95bb3976e">
+    <Deployment runDeploymentRoot="_Michaels-MacBook-Pro_2021-09-15_20_21_34" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a0783154-49bd-4d3b-9bd7-eb4a1a528eef" testId="e1be354a-ff2f-8afe-c05f-97761c782b29" testName="albumCollection.Tests.AlbumTest.GetAlbumbyId" computerName="Michaels-MacBook-Pro" duration="00:00:00.0028159" startTime="2021-09-15T20:21:34.6858850-07:00" endTime="2021-09-15T20:21:34.6858860-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0783154-49bd-4d3b-9bd7-eb4a1a528eef" />
+    <UnitTestResult executionId="d82a7652-5fa2-4120-a37c-47723f6a4209" testId="d46120b4-e9f9-c54f-08cb-62e1b2cfddc6" testName="albumCollection.Tests.AlbumTest.GetAlbumDetails" computerName="Michaels-MacBook-Pro" duration="00:00:00.0883922" startTime="2021-09-15T20:21:34.6810940-07:00" endTime="2021-09-15T20:21:34.6811690-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d82a7652-5fa2-4120-a37c-47723f6a4209" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="albumCollection.Tests.AlbumTest.GetAlbumDetails" storage="/users/michaelrothstein/documents/git/aspnetcore-albumcollection-sampleproject/albumcollection/albumcollection.tests/bin/debug/net5.0/albumcollection.tests.dll" id="d46120b4-e9f9-c54f-08cb-62e1b2cfddc6">
+      <Execution id="d82a7652-5fa2-4120-a37c-47723f6a4209" />
+      <TestMethod codeBase="/Users/michaelrothstein/Documents/git/aspnetcore-albumcollection-sampleproject/albumcollection/albumCollection.Tests/bin/Debug/net5.0/albumCollection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="albumCollection.Tests.AlbumTest" name="GetAlbumDetails" />
+    </UnitTest>
+    <UnitTest name="albumCollection.Tests.AlbumTest.GetAlbumbyId" storage="/users/michaelrothstein/documents/git/aspnetcore-albumcollection-sampleproject/albumcollection/albumcollection.tests/bin/debug/net5.0/albumcollection.tests.dll" id="e1be354a-ff2f-8afe-c05f-97761c782b29">
+      <Execution id="a0783154-49bd-4d3b-9bd7-eb4a1a528eef" />
+      <TestMethod codeBase="/Users/michaelrothstein/Documents/git/aspnetcore-albumcollection-sampleproject/albumcollection/albumCollection.Tests/bin/Debug/net5.0/albumCollection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="albumCollection.Tests.AlbumTest" name="GetAlbumbyId" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e1be354a-ff2f-8afe-c05f-97761c782b29" executionId="a0783154-49bd-4d3b-9bd7-eb4a1a528eef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d46120b4-e9f9-c54f-08cb-62e1b2cfddc6" executionId="d82a7652-5fa2-4120-a37c-47723f6a4209" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 5.0.10)
+[xUnit.net 00:00:01.66]   Discovering: albumCollection.Tests
+[xUnit.net 00:00:01.69]   Discovered:  albumCollection.Tests
+[xUnit.net 00:00:01.69]   Starting:    albumCollection.Tests
+[xUnit.net 00:00:01.85]   Finished:    albumCollection.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

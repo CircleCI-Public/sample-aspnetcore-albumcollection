@@ -1,1 +1,1 @@
-# sample-aspnetcore-albumcollection
+# albumcollection
